@@ -1,10 +1,10 @@
-*{
+* {
     margin:0;
     padding:0;
     box-sizing:border-box;
 }
 
-#canvas{
+#canvas {
     position: fixed;
     inset: 0;
     width: 100%;
@@ -12,20 +12,18 @@
     z-index: -2;
 }
 
-body{
+body {
     height:100vh;
     overflow:hidden;
-
     display:flex;
     justify-content:center;
     align-items:center;
-
     background:#090909;
     font-family:Inter,Arial,sans-serif;
     color:white;
 }
 
-.card{
+.card {
     width:360px;
     padding:45px;
     border-radius:24px;
@@ -36,7 +34,7 @@ body{
     box-shadow:0 20px 60px rgba(0,0,0,.45);
 }
 
-.avatar{
+.avatar {
     width:140px;
     height:140px;
     border-radius:50%;
@@ -47,28 +45,25 @@ body{
     transition:.35s;
 }
 
-.avatar:hover{
-
+.avatar:hover {
     transform:scale(1.05);
-
 }
 
-.nickname{
-
+.nickname {
     margin-top:22px;
     font-size:2rem;
     font-weight:700;
     letter-spacing:1px;
 }
 
-.socials{
+.socials {
     margin-top:32px;
     display:flex;
     justify-content:center;
     gap:20px;
 }
 
-.social{
+.social {
     width:62px;
     height:62px;
     border-radius:50%;
@@ -81,16 +76,14 @@ body{
     transition:.25s;
 }
 
-.social:hover{
+.social:hover {
     transform:translateY(-6px);
     background:rgba(255,255,255,.13);
     box-shadow:0 8px 25px rgba(255,255,255,.08);
 }
 
-.social img{
-
+.social img {
     width:28px;
     height:28px;
-
     filter:invert(1);
 }
