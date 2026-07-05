@@ -45,6 +45,10 @@ body {
     transition:.35s;
 }
 
+.description {
+    color:#6d6d6d
+}
+
 .avatar:hover {
     transform:scale(1.05);
 }
