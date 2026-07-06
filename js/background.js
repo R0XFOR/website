@@ -14,13 +14,10 @@ let config = {
 
 function updateConfig() {
     const area = canvas.width * canvas.height;
+    const diagonal = Math.hypot(canvas.width, canvas.height);
 
-    // примерно 1 частица на 8000 пикселей
-    config.density = Math.round(area / 6000);
-
-    // дистанция зависит от диагонали экрана
-    const diagonal = Math.sqrt(canvas.width ** 2 + canvas.height ** 2);
-    config.connectionDistance = diagonal * 0.04;
+    config.density = Math.max(300, Math.min(10, Math.round(area / 6000)));
+    config.connectionDistance = Math.max(80, Math.min(200, diagonal * 0.04));
 }
 
 function resize() {
