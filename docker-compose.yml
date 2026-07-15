@@ -1,6 +1,13 @@
 version: '3'
+
 services:
   web:
     build: .
     container_name: website
     restart: unless-stopped
+    networks:
+      - web-network
+
+networks:
+  web-network:
+    external: true
