@@ -1,0 +1,8 @@
+version: '3'
+services:
+  web:
+    build: .
+    container_name: website
+    restart: unless-stopped
+    ports:
+      - "8080:80"   # сайт будет доступен на хост-порту 8080
